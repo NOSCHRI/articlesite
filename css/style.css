@@ -179,6 +179,9 @@ a, a:hover, a:visited, a:active {
 
 h1	{
 	font-family: 'Helvetica';
+	font-weight:normal;
+	font-size:46px;
+	line-height:40px;
 }
 
 h1 a {
@@ -213,6 +216,7 @@ img {
     height: auto;
 }
 
+// ADAPTING TO MEDIA //
 
 @media screen and (max-width: 36em) {
     /* These CSS instructions are only used, if the 
@@ -263,28 +267,20 @@ img {
     }
 
 }
-<<<<<<< Local Changes
-=======
->>>>>>> External Changes
-=======
+
 
 @media only print {
     /**
      * When printing, the header is useful but it doesn’t need
      * to be so big
      */
-    header h1 {
+    h1 {
         font-size: 16px;
-        font-style: italic;
+		font-family: 'helvetica';
     }
     /* And the navigation we don’t need */
     nav {
         display: none;
     }
 }
-<<<<<<< HEAD
 
-
-=======
->>>>>>> External Changes
->>>>>>> FETCH_HEAD
