@@ -219,38 +219,10 @@ img {
 
 /* MEDIA SETTINGS*/
 
-/* Mobile screen laying*/
-
-@media only screen and (max-width: 640px) {
-   #logo { 
-    position: relative !important;
-    top: 5px;
-    left: 0px;  
-    z-index:1;
-}
-  .site-title-position-top #site {
-    top: 0;
-  }    
-   h1 { font-size: 18px !important; }
-   h2 { font-size: 18px !important; }
-   h2 {letter-spacing: 4px !important; }
-   h3 { font-size: 18px !important; }
-   p { font-size: 13px !important; 
-   line-height: 1.6em !important; }
-}
-
 /* Mobile screen standing*/
  @media only screen and (max-width: 480px) {
- #logo { 
-    position: relative !important;
-    top: 5px;
-    left: 0px;  
-    z-index:1;
-}
-  .site-title-position-top #site {
-    top: 0;
-  }    
-    h1 { font-size: 17px !important; }
+   
+    h1 { font-size: 46px; line-height:49px !important;}
     h2 { font-size: 17px !important; }
     h2 { letter-spacing: 4px !important; }
     h3 { font-size: 17px !important; }
@@ -258,8 +230,21 @@ img {
     line-height: 1.6em !important; }
 }
 
-/* PRINT ONLY */
 
+/* Mobile screen laying*/
+@media only screen and (max-width: 640px) {
+
+  h1 { font-size: 24px !important; }
+   h2 { font-size: 18px !important; }
+   h2 {letter-spacing: 4px !important; }
+   h3 { font-size: 18px !important; }
+   p { font-size: 13px !important; 
+   line-height: 1.6em !important; }
+} 
+
+
+
+/* PRINT ONLY */
 @media only print {
     h1 {
         font-size: 16px;
