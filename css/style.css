@@ -12,7 +12,7 @@ body {
 .container_3 {
 	width: 92%;
 	margin-left: 4%;
-	margin-right: 4%;
+	margin-right: 4%;	
 }
 
 /* Grid >> Global
@@ -156,7 +156,7 @@ body {
 /* 960GRID */
 
 header {
-    padding: 0 0 16px 0;
+    padding: 10px 0 16px 10px;
 }
 
 li {
@@ -203,11 +203,12 @@ p 1	{
 
 footer {
 	font-size: 20px;
-	position:fixed;
 	float:left;
-	margin-left:5%;
-	margin-top:5%;
+	margin-left:2%;
+	margin-bottom:2%;
 	text-align:left;
+	position: relative;
+	
 }
 
 /* This makes the images scale to the full width of the page */
@@ -222,24 +223,39 @@ img {
 /* Mobile screen standing*/
  @media only screen and (max-width: 480px) {
    
-    h1 { font-size: 46px; line-height:49px !important;}
-    h2 { font-size: 17px !important; }
-    h2 { letter-spacing: 4px !important; }
-    h3 { font-size: 17px !important; }
-    p { font-size: 12,5px !important; 
-    line-height: 1.6em !important; }
+    h1 { 
+		font-size: 46px; 
+		line-height:49px !important;
+	}
+    h2 { 
+		font-size: 17px !important; 
+	}
+    h3 {
+		 font-size: 17px !important; 
+	 }
+    p {
+		 font-size: 12,5px !important; 
+    	 line-height: 1.6em !important; 
+	 }
 }
 
 
 /* Mobile screen laying*/
 @media only screen and (max-width: 640px) {
 
-  h1 { font-size: 24px !important; }
-   h2 { font-size: 18px !important; }
-   h2 {letter-spacing: 4px !important; }
-   h3 { font-size: 18px !important; }
-   p { font-size: 13px !important; 
-   line-height: 1.6em !important; }
+	h1 {
+		 font-size: 24px !important; 
+	 }
+ 	h2 { 
+		font-size: 18px !important; 
+	}
+ 	h3 { 
+		font-size: 18px !important; 
+	}
+ 	p { 
+		font-size: 13px !important; 
+   	 	line-height: 1.6em !important; 
+	}
 } 
 
 
