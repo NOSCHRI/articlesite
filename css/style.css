@@ -241,7 +241,7 @@ img {
 
 
 /* Mobile screen laying*/
-@media only screen and (max-width: 640px) {
+@media only screen and (min-width: 480px) and (max-width: 640px) {
 
 	h1 {
 		 font-size: 24px !important; 
