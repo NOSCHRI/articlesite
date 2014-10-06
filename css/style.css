@@ -1,8 +1,14 @@
-<<<<<<< Local Changes
+/* ---------- MAIN ---------- */
+
 body {
-	font-family: 'Arial';
-    font-size: 26px;
-    padding: 8px 16px 0px 8px;
+	background-color:#e4e4e4;
+	font-family: 'Helvetica';
+    font-size: 20px;
+    padding: 8px 20px 0px 20px;
+}
+
+article {
+	padding: 0px 30px 0px 30px;
 }
 
 .textwrapper {
@@ -16,22 +22,14 @@ header {
     padding: 10px 0 16px 10px;
 }
 
-li {
-    list-style: none;
-    margin-bottom: 4px;
-}
+/* ---------- TYPOGRAPHY STYLES ---------- */
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
-ul, ol {
-    margin-top: 0;
-    padding-left: 0;
-}
-
 a, a:hover, a:visited, a:active {
-    color: #FF0000;
+    color: red;
 }
 
 h1	{
@@ -42,21 +40,29 @@ h1	{
 }
 
 h1 a {
-	    text-decoration: line-through;
+	text-decoration: line-through;
 }
 
 h2 {
+	padding-top:10px;
 	font-size:28px;
 }
 
-p, ul {
-	font-family: 'Arial';
-    margin-top: 0;
+
+
+/* ---------- LISTINGS ---------- */
+
+li {
+    list-style: none;
+    margin-bottom: 4px;
 }
 
-p 1	{
-	
+ul, ol {
+    margin-top: 0;
+    padding-left: 0;
 }
+
+
 
 footer {
 	font-size: 20px;
@@ -75,9 +81,11 @@ img {
 }
 
 
-/* MEDIA SETTINGS*/
+/* ---------- MEDIA QUERIES ---------- */
 
-/* Mobile screen standing*/
+
+
+/* MEDIA LEVEL#1 - SMALL*/
  @media only screen and (max-width: 480px) {
 	 
 	.textwrapper {
@@ -87,24 +95,18 @@ img {
 	 	column-gap: 40px;
 	 }
    
-    h1 { 
-		font-size: 46px; 
-		line-height:49px !important;
-	}
-    h2 { 
-		font-size: 17px !important; 
-	}
-    h3 {
-		 font-size: 17px !important; 
-	 }
-    p {
-		 font-size: 12,5px !important; 
-    	 line-height: 1.6em !important; 
-	 }
+ 	article { padding:20px 0px 0px 0px; }
+     
+    h1 { font-size: 34px; line-height:35px; !important; }
+    h2 { font-size: 16px !important; }
+    h3 { font-size: 18px !important; }
+    p {  font-size: 12.5px !important;line-height: 1.6em !important;}
+	ul { font-size:12.5px;}
+	 
 }
 
 
-/* Mobile screen laying*/
+/* MEDIA LEVEL#2 - MEDIUM*/
 @media only screen and (min-width: 480px) and (max-width: 640px) {
 	
 	.textwrapper {
@@ -113,23 +115,18 @@ img {
 	    column-count: 2;
 		column-gap: 40px;
 	}
+	
+ 	article { padding:20px 0px 0px 0px; }
 
-	h1 {
-		 font-size: 24px !important; 
-	 }
- 	h2 { 
-		font-size: 18px !important; 
-	}
- 	h3 { 
-		font-size: 18px !important; 
-	}
- 	p { 
-		font-size: 15px !important; 
-   	 	line-height: 1.6em !important; 
-	}
+	h1 { font-size: 34px !important; }
+ 	h2 { font-size: 16px !important; }
+ 	h3 { font-size: 18px !important; }
+ 	p { font-size: 15px !important; line-height: 1.6em !important; }
+	ul { font-size:15px;}
+	
 } 
 
-/* Mobile screen laying*/
+/* MEDIA LEVEL#3 - LARGE*/
 @media only screen and (min-width: 640px) and (max-width: 1024px) {
 	
 	.textwrapper {
@@ -138,30 +135,23 @@ img {
 	    column-count: 2;
 		column-gap: 40px;
 	}
+	
+ 	article { padding:20px 0px 0px 0px; }
 
-	h1 {
-		 font-size: 24px !important; 
-	 }
- 	h2 { 
-		font-size: 18px !important; 
-	}
- 	h3 { 
-		font-size: 18px !important; 
-	}
- 	p { 
-		font-size: 15px !important; 
-   	 	line-height: 1.6em !important; 
-	}
+	h1 { font-size: 44px !important; line-height:45px; }
+ 	h2 { font-size: 20px !important; }
+ 	h3 { font-size: 18px !important; }
+ 	p { font-size: 15px !important; line-height: 1.6em !important; }
+	ul { font-size:15px;}
+	
 } 
 
 
-
-
 /* PRINT ONLY */
-@media only print {
+@media print {
     h1 {
-        font-size: 16px;
-		font-family: 'helvetica';
+        font-size: 16px !important;
+		font-family: 'helvetica' !important;
     }
 
     nav {
@@ -170,41 +160,3 @@ img {
 }
 
 
-
-
-
-/* ADAPTING TO MEDIA 
-
-@media screen and (max-width: 36em) {
-     header h1 {
-        font-size: 16px;
-        font-style: italic;
-    }
-}
-
-@media only screen and (min-width: 36em) {
-    article { 
-        width: calc(100% - 200px);
-        float: right;
-        margin-right: 0;
-		font-size: 400px;
-		line-height: 420px;
-		
-		
-		-moz-transform: scale(-1, 1);
-		-webkit-transform: scale(-1, 1);
-		-o-transform: scale(-1, 1);
-		-ms-transform: scale(-1, 1);
-		transform: scale(-1, 1);
-    }
-	
-    nav {
-        width: 200px;
-        float: left;
-        margin-left: 0;
-    }
-    footer {
-        clear: both;
-    }
-
-	} */
