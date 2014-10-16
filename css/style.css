@@ -4,28 +4,6 @@ header {
 	padding-bottom:50px;
 }
 
-.navbar {
-	background-color:white;
-	padding:10px 10px 10px 10px;
-	margin-right:30px;
-	right:0;
-	position:fixed;
-    box-shadow: 1px 1px 10px black;
-}
-
-.navbar a {
-    color: black;
-	font-size:20px;
-	text-decoration:none;
-	cursor:e-resize;
-}
-
-.navbar a:hover {
-    color: blue;
-	font-size:20px;
-	text-decoration:none;
-}
-
 body {
 	background-color:white;
 	font-family: 'Helvetica';
@@ -52,7 +30,34 @@ footer {
 	font-size:11px !important;
 }
 
-/* ---------- TYPOGRAPHY STYLES ---------- */
+
+/* ---------- NAVBAR ---------- */
+
+.navbar {
+	background-color:white;
+	padding:10px 10px 10px 10px;
+	margin-right:30px;
+	right:0;
+	position:fixed;
+    box-shadow: 1px 1px 10px black;
+}
+
+.navbar a {
+    color: black;
+	font-size:20px;
+	text-decoration:none;
+	cursor:e-resize;
+}
+
+.navbar a:hover {
+    color: blue;
+	font-size:20px;
+	text-decoration:none;
+}
+
+
+
+/* ---------- TYPOGRAPHY ---------- */
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
@@ -94,7 +99,7 @@ h2 {
 
 
 
-/* ---------- LISTINGS ---------- */
+/* ---------- LIST ---------- */
 
 li {
     list-style: none;
@@ -107,17 +112,6 @@ ul, ol {
 }
 
 
-
-footer {
-	font-size: 20px;
-	float:left;
-	margin-left:2%;
-	margin-bottom:2%;
-	text-align:left;
-	position: relative;
-	
-}
-
 /* This makes the images scale to the full width of the page */
 img {
     width: 100%;
@@ -126,14 +120,13 @@ img {
 
 
 /* ---------- MEDIA QUERIES ---------- */
+
 @media print {
-	h1{font-size:1000px;}
-	
 	
     body {
         font-size: 116px !important;
 		color:red !important;
-		font-family: 'helvetica' !important;
+		font-family: 'Helvetica' !important;
     }
 
     .navbar {
@@ -146,11 +139,19 @@ img {
 	    column-count: 2;
 		column-gap: 40px;
 	}
+	
+ 	article { padding:20px 0px 0px 0px; }
+
+	h1 { font-size: 38px !important; line-height:38px !important; }
+ 	h2 { font-size: 20px !important; }
+ 	h3 { font-size: 18px !important; }
+ 	p { font-size: 14px !important; line-height: 16px !important; }
+	ul { font-size:14px;}
 }
 
 
 /* MEDIA LEVEL#1 - SMALL*/
- @media only screen and (max-width: 480px) {
+ @media screen and (max-width: 480px) {
 	 
 	.textwrapper {
 	    -webkit-column-count: 1; /* Chrome, Safari, Opera */
@@ -175,7 +176,7 @@ img {
 
 
 /* MEDIA LEVEL#2 - MEDIUM*/
-@media only screen and (min-width: 480px) and (max-width: 640px) {
+@media screen and (min-width: 480px) and (max-width: 640px) {
 	
 	.textwrapper {
 	    -webkit-column-count: 2; /* Chrome, Safari, Opera */
@@ -195,7 +196,7 @@ img {
 } 
 
 /* MEDIA LEVEL#3 - LARGE*/
-@media only screen and (min-width: 640px) and (max-width: 1024px) {
+@media screen and (min-width: 640px) and (max-width: 1024px) {
 	
 	.textwrapper {
 	    -webkit-column-count: 2; /* Chrome, Safari, Opera */
