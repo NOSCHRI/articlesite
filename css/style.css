@@ -11,7 +11,7 @@ body {
     padding: 30px 20px 0px 20px;
 }
 
-p{	line-height:25px;}
+p{	line-height:25	px;}
 
 
 article {
@@ -97,6 +97,10 @@ h1 a {
 h2 {
 	padding-top:10px;
 	font-size:28px;
+}
+
+h4 {
+	
 }
 
 
