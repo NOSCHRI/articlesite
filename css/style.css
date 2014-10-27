@@ -68,9 +68,7 @@ footer {
 	position:fixed;
 	box-shadow: 1px 1px 10px black;
 }
-.backtotop:hover{
-box-shadow: 1px 1px 20px blue;
-}
+
 
 .backtotop a{
 	text-decoration:none;
