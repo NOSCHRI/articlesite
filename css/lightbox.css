@@ -11,8 +11,9 @@ body:after {
   z-index: 9999;
   background-color: black;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10);
-  opacity: 0.5;
+  opacity: 0.95;
   display: none;
+
 }
 
 .lightbox {

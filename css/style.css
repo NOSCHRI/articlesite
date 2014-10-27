@@ -7,8 +7,8 @@ header {
 body {
 	background-color:white;
 	font-family: 'Helvetica';
-    font-size: 20px;
-    padding: 30px 20px 0px 20px;
+  font-size:20px;
+  padding: 30px 20px 0px 20px;
 }
 
 p{	line-height:25	px;}
@@ -16,6 +16,8 @@ p{	line-height:25	px;}
 
 article {
 	padding: 0px 30px 0px 30px;
+	line-height:25px;
+	padding-bottom:100px;
 }
 
 .textwrapper {
@@ -41,7 +43,7 @@ footer {
 	margin-right:30px;
 	right:0;
 	position:fixed;
-    box-shadow: 1px 1px 10px black;
+  box-shadow: 1px 1px 10px black;
 }
 
 .navbar a {
@@ -57,6 +59,27 @@ footer {
 	text-decoration:none;
 }
 
+.backtotop {
+	background-color:white;
+	padding:10px 10px 10px 10px;
+	margin-right:30px;
+	bottom:0;
+	right:0;
+	position:fixed;
+	box-shadow: 1px 1px 10px black;
+}
+.backtotop:hover{
+box-shadow: 1px 1px 20px blue;
+}
+
+.backtotop a{
+	text-decoration:none;
+	color:black;
+	font-size:34px;
+}
+.backtotop a:hover {
+color:blue;
+}
 
 
 /* ---------- TYPOGRAPHY ---------- */
@@ -181,7 +204,7 @@ img {
 
 	.navbar { margin:-25px 10px 0px 0px;padding:5px 10px 5px 10px;}
 	.navbar a {font-size:14px !important;}
- 	article { padding:0px 0px 0px 0px; }
+ 	article { padding:0px 0px 50px 0px; }
 
     h1 { font-size: 34px; line-height:35px; !important; }
     h2 { font-size: 18px !important; }
@@ -189,7 +212,8 @@ img {
     p {  font-size: 14px !important;line-height: 16px !important;}
 	ul { font-size:12.5px;}
 
-
+.backtotop { margin:-25px 10px 0px 0px;padding:5px 10px 5px 10px;}
+.backtotop a {font-size:18px !important;}
 
 }
 
@@ -204,13 +228,17 @@ img {
 		column-gap: 40px;
 	}
 
- 	article { padding:20px 0px 0px 0px; }
+ 	article { padding:20px 0px 50px 0px; }
 
 	h1 { font-size: 38px !important; line-height:38px !important; }
  	h2 { font-size: 22px !important; }
  	h3 { font-size: 22px !important; }
  	p { font-size: 14px !important; line-height: 16px !important; }
 	ul { font-size:14px;}
+
+	.backtotop { margin:-25px 10px 0px 0px;padding:5px 10px 5px 10px;}
+	.backtotop a {font-size:20px !important;}
+
 
 }
 
@@ -224,13 +252,16 @@ img {
 		column-gap: 40px;
 	}
 
- 	article { padding:0px 0px 0px 0px; }
+ 	article { padding:0px 0px 50px 0px; }
 
 	h1 { font-size: 44px !important; line-height:45px; }
  	h2 { font-size: 22px !important; }
  	h3 { font-size: 22px !important; }
  	p { font-size: 16px !important; line-height: 19px !important; }
 	ul { font-size:16px;}
+
+.backtotop { margin:-25px 30px 0px 0px;padding:5px 10px 5px 10px;}
+.backtotop a {font-size:22px !important;}
 
 }
 
