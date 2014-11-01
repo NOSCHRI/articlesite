@@ -272,7 +272,7 @@ img {
  	h2 { font-size: 20pt !important; }
  	h3 { font-size: 14pt !important; }
  	p { font-size: 14pt !important; line-height: 16pt !important; }
-	ul { font-size:14px;}
+	ul { font-size:14px; line-height: 16px !important;}
 }
 
 @page :first {
@@ -295,10 +295,10 @@ img {
  	article { padding:0px 0px 50px 0px; }
 
     h1 { font-size: 34px; line-height:35px; !important; }
-    h2 { font-size: 18px !important; }
-    h3 { font-size: 18px !important; }
-    p {  font-size: 14px !important;line-height: 16px !important;}
-	ul { font-size:12.5px;}
+    h2 { font-size: 19px !important; }
+    h3 { font-size: 19px !important; }
+    p {  font-size: 15px !important;line-height: 17px !important;}
+	ul { font-size: 15px; line-height: 17px !important;}
 
 .backtotop { margin:-25px 10px 0px 0px;padding:5px 10px 5px 10px;}
 .backtotop a {font-size:18px !important;}
@@ -321,8 +321,8 @@ img {
 	h1 { font-size: 38px !important; line-height:38px !important; }
  	h2 { font-size: 22px !important; }
  	h3 { font-size: 22px !important; }
- 	p { font-size: 14px !important; line-height: 16px !important; }
-	ul { font-size:14px;}
+ 	p { font-size: 16px !important; line-height: 18px !important; }
+	ul { font-size:16px; line-height: 18px !important;}
 
 	.backtotop { margin:-25px 10px 0px 0px;padding:5px 10px 5px 10px;}
 	.backtotop a {font-size:20px !important;}
@@ -345,8 +345,8 @@ img {
 	h1 { font-size: 44px !important; line-height:45px; }
  	h2 { font-size: 22px !important; }
  	h3 { font-size: 22px !important; }
- 	p { font-size: 16px !important; line-height: 19px !important; }
-	ul { font-size:16px;}
+ 	p { font-size: 17px !important; line-height: 19px !important; }
+	ul { font-size:17px;line-height: 19px !important;}
 
 .backtotop { margin:-25px 30px 0px 0px;padding:5px 10px 5px 10px;}
 .backtotop a {font-size:22px !important;}
