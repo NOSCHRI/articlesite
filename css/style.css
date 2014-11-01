@@ -129,6 +129,10 @@ h3{
 }
 
 h4 {
+	font-weight:normal;
+	padding-top:35px;
+	font-size:32px;
+	text-align:left;
 
 }
 
@@ -176,6 +180,50 @@ img {
     width: 100%;
     height: auto;
 }
+
+/* ---------- List box ---------- */
+
+
+#terminologyDIV {
+    width: 400px;
+    height: 200px;
+		padding: 2px 15px 30px 2px;
+		background-color: white;
+    color: black;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {box-shadow: 5px 10px 20px black;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {box-shadow: 5px 10px 20px black;}
+}
+
+#sourcesDIV {
+		width: 1000px;
+		height: 645px;
+		padding: 10px 15px 15px 30px;
+		background-color: white;
+		color: black;
+		-webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+		animation: mymove 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+		50% {box-shadow: 5px 10px 20px black;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+		50% {box-shadow: 5px 10px 20px black;}
+}
+
 
 
 /* ---------- MEDIA QUERIES ---------- */
