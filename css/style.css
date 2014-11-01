@@ -225,6 +225,26 @@ img {
 }
 
 
+#contentDIV {
+		width: 480px;
+		height: 500px;
+		padding: 10px 15px 15px 30px;
+		background-color: white;
+		color: black;
+		-webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+		animation: mymove 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+		50% {box-shadow: 5px 10px 20px black;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+		50% {box-shadow: 5px 10px 20px black;}
+}
+
 
 /* ---------- MEDIA QUERIES ---------- */
 
