@@ -226,8 +226,6 @@ img {
 
 
 #contentDIV {
-		width: 480px;
-		height: 500px;
 		padding: 10px 15px 15px 30px;
 		background-color: white;
 		color: black;
@@ -303,6 +301,7 @@ img {
 .backtotop { margin:-25px 10px 0px 0px;padding:5px 10px 5px 10px;}
 .backtotop a {font-size:18px !important;}
 
+
 }
 
 
@@ -327,6 +326,10 @@ img {
 	.backtotop { margin:-25px 10px 0px 0px;padding:5px 10px 5px 10px;}
 	.backtotop a {font-size:20px !important;}
 
+	#contentDIV{
+		width:500px;
+		height:auto;
+	}
 
 }
 
