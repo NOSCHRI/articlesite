@@ -331,21 +331,22 @@ img {
  /* All your print styles go here */
 
 body {
-color:black !important;
-font-family: 'Helvetica' !important;
-}
-
-.textwrapper {
-	-webkit-column-count: 2; /* Chrome, Safari, Opera */
-	-moz-column-count: 2; /* Firefox */
+	color:black !important;
+	font-family: 'Helvetica' !important;
 	column-count: 2;
-column-gap: 40em;
-}
+  column-gap: 2em;
+  column-rule: thin solid black;
+ }
 
-
+-moz-column-count:3; /* Firefox */
+-webkit-column-count:3; /* Safari and Chrome */
 
 /* FONT STYLES */
 	h1 {
+		column-span: all
+		break-before: column;
+		break-inside: avoid-column;
+		break-after: avoid-column;
 		font-size: 70px !important;
 		line-height:65px;
 		}
@@ -353,8 +354,6 @@ column-gap: 40em;
 	h2 {
 		font-size: 22px !important;
 		text-align:left;
-		page-break-after: avoid;
-    page-break-before: always;
 		}
 
 	h3 {
