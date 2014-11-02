@@ -343,14 +343,38 @@ column-gap: 40em;
 }
 
 
-	article { padding:0px 0px 50px 0px; }
 
 /* FONT STYLES */
-	h1 { font-size: 50px !important; line-height:45px; }
-	h2 { font-size: 22px !important; text-align:left; }
-	h3 { font-size: 22px !important; text-align:left;  }
-	p { font-size: 17px !important; line-height: 19px !important; }
-	ul { font-size:17px;line-height: 19px !important;}
+	h1 {
+		font-size: 70px !important;
+		line-height:65px;
+		}
+
+	h2 {
+		font-size: 22px !important;
+		text-align:left;
+		page-break-after: avoid;
+    page-break-before: always;
+		}
+
+	h3 {
+		font-size: 22px !important;
+		text-align:left;
+		page-break-after: avoid;
+		page-break-before: always;
+		}
+
+	p {
+		font-size: 17px !important;
+		line-height: 19px !important;
+		orphans:3;
+    widows:3;}
+
+	ul {
+		font-size:17px;
+		line-height: 19px !important;
+		}
+
 
 .caption {
 	font-size:12px !important;
@@ -363,6 +387,8 @@ column-gap: 40em;
 /* IMAGE */
 	img {
 	max-width: 350px;
+	page-break-inside:avoid;
+  page-break-after:avoid;
 }
 
 /* HIDDEN */
