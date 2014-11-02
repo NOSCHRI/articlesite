@@ -246,38 +246,6 @@ img {
 
 /* ---------- MEDIA QUERIES ---------- */
 
-@media print {
-
-    body {
-		color:black !important;
-		font-family: 'Helvetica' !important;
-    }
-
-    .navbar {
-        visibility: hidden;
-    }
-
-	.textwrapper {
-	    -webkit-column-count: 2; /* Chrome, Safari, Opera */
-	    -moz-column-count: 2; /* Firefox */
-	    column-count: 2;
-		column-gap: 40em;
-	}
-
-	img { }
-
-	h1 { font-size: 34pt !important; line-height:38pt !important; }
- 	h2 { font-size: 20pt !important; }
- 	h3 { font-size: 14pt !important; }
- 	p { font-size: 14pt !important; line-height: 16pt !important; }
-	ul { font-size:14px; line-height: 16px !important;}
-}
-
-@page :first {
-  margin-top: 8cm;
-}
-
-
 /* MEDIA LEVEL#1 - SMALL*/
  @media screen and (max-width: 480px) {
 
@@ -296,7 +264,7 @@ img {
     h2 { font-size: 19px !important; }
     h3 { font-size: 19px !important; }
     p {  font-size: 15px !important;line-height: 17px !important;}
-	ul { font-size: 15px; line-height: 17px !important;}
+		ul { font-size: 15px; line-height: 17px !important;}
 
 .backtotop { margin:-25px 10px 0px 0px;padding:5px 10px 5px 10px;}
 .backtotop a {font-size:18px !important;}
@@ -358,3 +326,51 @@ img {
 
 
 /* PRINT ONLY */
+
+@media print {
+ /* All your print styles go here */
+
+body {
+color:black !important;
+font-family: 'Helvetica' !important;
+}
+
+.textwrapper {
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+	-moz-column-count: 2; /* Firefox */
+	column-count: 2;
+column-gap: 40em;
+}
+
+
+	article { padding:0px 0px 50px 0px; }
+
+/* FONT STYLES */
+	h1 { font-size: 50px !important; line-height:45px; }
+	h2 { font-size: 22px !important; text-align:left; }
+	h3 { font-size: 22px !important; text-align:left;  }
+	p { font-size: 17px !important; line-height: 19px !important; }
+	ul { font-size:17px;line-height: 19px !important;}
+
+.caption {
+	font-size:12px !important;
+	line-height:13.5px !important;
+	font-style:italic;
+	padding-left:20px;
+	color:grey;
+	}
+
+/* IMAGE */
+	img {
+	max-width: 350px;
+}
+
+/* HIDDEN */
+.navbar, #header, #footer, .footer, .nav {
+		display: none !important;
+}
+
+.backtotop { margin:-25px 30px 0px 0px;padding:5px 10px 5px 10px; display:none;}
+.backtotop a {font-size:22px !important;display:none;}
+
+}
