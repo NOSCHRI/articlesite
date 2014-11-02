@@ -333,13 +333,15 @@ img {
 body {
 	color:black !important;
 	font-family: 'Helvetica' !important;
+	-moz-column-count:2; /* Firefox */
+	-webkit-column-count:2; /* Safari and Chrome */
 	column-count: 2;
   column-gap: 2em;
   column-rule: thin solid black;
+	margin:0cm 1cm 0cm 1cm;
  }
 
--moz-column-count:3; /* Firefox */
--webkit-column-count:3; /* Safari and Chrome */
+
 
 /* FONT STYLES */
 	h1 {
@@ -352,45 +354,52 @@ body {
 		}
 
 	h2 {
-		font-size: 22px !important;
+		font-size: 16pt !important;
 		text-align:left;
 		}
 
 	h3 {
-		font-size: 22px !important;
-		text-align:left;
+		font-size: 22pt !important;
+		text-align:center;
 		page-break-after: avoid;
 		page-break-before: always;
 		}
 
 	p {
-		font-size: 17px !important;
-		line-height: 19px !important;
+		font-size: 14pt !important;
+		line-height: 18pt !important;
 		orphans:3;
     widows:3;}
 
 	ul {
 		font-size:17px;
 		line-height: 19px !important;
+		width:50%;
 		}
 
 
 .caption {
-	font-size:12px !important;
-	line-height:13.5px !important;
+	font-size:8pt !important;
+	line-height:9pt !important;
 	font-style:italic;
 	padding-left:20px;
 	color:grey;
+	width:50%;
 	}
 
 /* IMAGE */
 	img {
-	max-width: 350px;
+	width: 6cm;
 	page-break-inside:avoid;
   page-break-after:avoid;
 }
 
 /* HIDDEN */
+
+footer {
+	visibility:hidden;
+}
+
 .navbar, #header, #footer, .footer, .nav {
 		display: none !important;
 }
