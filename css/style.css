@@ -5,11 +5,12 @@ header {
 }
 
 body {
-	background-color:white;
 	font-family: 'Helvetica';
 
   padding: 30px 20px 0px 20px;
 }
+body#page1{background-color:#000;}
+body#page2{background-color:#ffffff;}
 
 p{	
 	font-size: 19px;
@@ -141,6 +142,22 @@ h4 {
 
 }
 
+h5	{
+	font-family: 'Helvetica';
+	font-weight:normal;
+	font-size:66px;
+	line-height:67px;
+	letter-spacing:-1px;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+h6{
+	font-weight:normal;
+	padding-top:35px;
+	font-size:32px;
+	text-align:left;
+}
+
 h1 a{
 	text-decoration:none;
 	color:black;
@@ -151,9 +168,24 @@ h1 a:visited{
 	color:black;
 }
 
-h1 a:hover{
+h5 a:hover{
 	text-decoration:none;
-	color:black;
+	color:white;
+}
+
+h5 a{
+	text-decoration:none;
+	color:white;
+}
+
+h5 a:visited{
+	text-decoration:none;
+	color:white;
+}
+
+h5 a:hover{
+	text-decoration:none;
+	color:white;
 }
 
 /* ---------- IMAGE HOVER CSS ---------- */
@@ -282,7 +314,7 @@ img {
     height: auto;
 }
 
-/* ---------- List box ---------- */
+/* ---------- INDEX List box ---------- */
 
 
 #terminologyDIV {
@@ -290,39 +322,40 @@ img {
     height: 200px;
 		padding: 2px 15px 30px 2px;
 		background-color: white;
-    color: black;
+    color: white;
     -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
     animation: mymove 5s infinite;
 }
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes mymove {
-    50% {box-shadow: 5px 10px 20px black;}
+    90% {box-shadow: 1px 1px 40px white;}
 }
 
 /* Standard syntax */
 @keyframes mymove {
-    50% {box-shadow: 5px 10px 20px black;}
+    90% {box-shadow: 1px 1px 40px white;}
 }
 
 #sourcesDIV {
 		width: 1000px;
 		height: 645px;
-		padding: 10px 15px 15px 30px;
+		padding: 10px 15px 150px 40px;
 		background-color: white;
 		color: black;
 		-webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
 		animation: mymove 5s infinite;
+		margin-bottom: 50px;
 }
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes mymove {
-		50% {box-shadow: 5px 10px 20px black;}
+		90% {box-shadow: 1px 1px 40px white;}
 }
 
 /* Standard syntax */
 @keyframes mymove {
-		50% {box-shadow: 5px 10px 20px black;}
+		90% {box-shadow: 1px 1px 40px white;}
 }
 
 
@@ -333,16 +366,17 @@ img {
 		width:40%;
 		-webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
 		animation: mymove 5s infinite;
+		margin-bottom: 50px;
 }
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes mymove {
-		50% {box-shadow: 5px 10px 20px black;}
+		90% {box-shadow: 1px 1px 40px white;}
 }
 
 /* Standard syntax */
 @keyframes mymove {
-		50% {box-shadow: 5px 10px 20px black;}
+		90% {box-shadow: 1px 1px 40px white;}
 }
 
 
@@ -354,6 +388,10 @@ img {
 #contentDIV{
 	width:auto;
 }
+#sourcesDIV{
+	width:auto;
+}
+
 	.textwrapper {
 	    -webkit-column-count: 1; /* Chrome, Safari, Opera */
 	    -moz-column-count: 1; /* Firefox */
@@ -370,6 +408,8 @@ img {
     h3 { font-size: 19px !important; }
     p {  font-size: 15px !important;line-height: 17px !important;}
 		ul { font-size: 15px; line-height: 17px !important;}
+	h5 { font-size: 40px !important; line-height:43px !important; }
+	h6 { font-size: 19px !important; }
 
 .backtotop { margin:-25px 10px 0px 0px;padding:5px 10px 5px 10px;}
 .backtotop a {font-size:18px !important;}
@@ -382,6 +422,9 @@ img {
 @media screen and (min-width: 480px) and (max-width: 640px) {
 
 #contentDIV{
+	width:auto;
+}
+#sourcesDIV{
 	width:auto;
 }
 
@@ -399,7 +442,9 @@ img {
  	h3 { font-size: 22px !important; }
  	p { font-size: 16px !important; line-height: 18px !important; }
 	ul { font-size:16px; line-height: 18px !important;}
-
+	h5 { font-size: 60px !important; }
+	h6 { font-size: 22px !important; }
+	
 	.backtotop { margin:-25px 10px 0px 0px;padding:5px 10px 5px 10px;}
 	.backtotop a {font-size:20px !important;}
 
@@ -409,6 +454,9 @@ img {
 @media screen and (min-width: 640px) and (max-width: 1024px) {
 
 #contentDIV{
+	width:auto;
+}
+#sourcesDIV{
 	width:auto;
 }
 
@@ -426,6 +474,8 @@ img {
  	h3 { font-size: 22px !important; }
  	p { font-size: 17px !important; line-height: 19px !important; }
 	ul { font-size:17px;line-height: 19px !important;}
+	h5 { font-size: 66px !important; }
+	h6 { font-size: 22px !important; }
 
 .backtotop { margin:-25px 30px 0px 0px;padding:5px 10px 5px 10px;}
 .backtotop a {font-size:22px !important;}
