@@ -288,7 +288,7 @@ h5 a:hover{
 	-moz-transform: translateY(0px);
 	-ms-transform: translateY(0px);
 	transform: translateY(0px);
-	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.3s;
 	-moz-transition: -moz-transform 0.4s, opacity 0.1s;
 	transition: transform 0.4s, opacity 0.1s;
 }
