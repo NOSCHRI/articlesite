@@ -516,16 +516,17 @@ body {
 	-moz-column-count:2; /* Firefox */
 	-webkit-column-count:2; /* Safari and Chrome */
 	column-count: 2;
-  column-gap: 2em;
-  column-rule: thin solid black;
+	column-gap: 2em;
+	column-rule: thin solid black;
 	margin:0px 1px;
+	
  }
 
 
 
 /* PRINT ONLY - FONT STYLES */
 	h1 {
-		margin-top: -70px;
+		margin-top: -50px;
 		column-span: all
 		break-before: column;
 		break-inside: avoid-column;
@@ -535,18 +536,21 @@ body {
 		}
 
 	h2 {
-		font-size: 15pt !important;
-		line-height: 18pt;
+		font-size: 13pt !important;
+		line-height: 16pt;
 		text-align:left;
 		color: black !important;
+		margin-bottom: -55px;
 		}
 
 	h3 {
-		font-size: 22pt !important;
+		margin-top: -90px;
+		font-size: 30pt !important;
 		text-align:center;
 		page-break-after: avoid;
 		page-break-before: always;
 		color: black !important;
+		margin-bottom: 1.5cm;
 		
 		}
 
@@ -574,9 +578,10 @@ body {
 
 /* IMAGE */
 	img {
-	width: 6cm;
-	page-break-inside:avoid;
-  page-break-after:avoid;
+	width: 9cm;
+	page-break-inside:avoid !important;
+	page-break-after: avoid;
+	margin-top: 1cm;
 }
 
 
